@@ -92,6 +92,7 @@ export const Signup = () => {
       return;
     }
     dispatch(signup(userData));
+    toast.success("Suucessfully Registered.Please Login...");
     navigate("/login"); // Ensure signup action is dispatched properly
   };
 
